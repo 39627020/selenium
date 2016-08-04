@@ -19,18 +19,17 @@ public class TestSelenium {
         WebDriver driver = new ChromeDriver();
 
         // And now use this to visit Google
-        driver.get("http://wx.smartercorps.com/shanghai/user/finduser.do");
         // Alternatively the same thing can be done like this
-        // driver.navigate().to("http://www.google.com");
+         driver.navigate().to("http://www.google.com");
 
         // Find the text input element by its name
-//        WebElement element = driver.findElement(By.name("q"));
+        WebElement element = driver.findElement(By.name("q"));
 //
 //        // Enter something to search for
-//        element.sendKeys("Cheese!");
+        element.sendKeys("Cheese!");
 //
 //        // Now submit the form. WebDriver will find the form for us from the element
-//        element.submit();
+        element.submit();
 
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
